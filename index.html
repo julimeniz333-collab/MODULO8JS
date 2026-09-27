@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+
+<title>
+    Federación Bonaerense de Asociaciones Civiles de Interés Público
+</title>
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <img
+            src="LOGOFEBA.png"
+            alt="Logo FEBACIP"
+            class="logo"
+            height="300px"
+        >
+
+        <ul>
+
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+
+            <li>
+                <a href="#">Servicios</a>
+            </li>
+
+            <li>
+                <a href="#">Trámites</a>
+            </li>
+
+            <li>
+                <a href="https://intranet.hcdiputados-ba.gov.ar/includes/ley_completa_2017.php?vnroley=15192">
+                    Ley 15.192
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="texto">
+
+            <h1>
+                Federación Bonaerense de Asociaciones Civiles de Interés Público
+            </h1>
+
+            <p>
+                Brindamos asesoramiento, capacitación y acompañamiento para
+                asociaciones civiles, clubes, bibliotecas populares y
+                organizaciones comunitarias.
+            </p>
+
+            <button class="boton" id="botonTramite">
+                Consultar trámite
+            </button>
+
+        </div>
+
+
+        <div class="imagen">
+
+            <img
+                src="modelos_condonacion.gif"
+                alt="Modelos de condonación"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <section id="simulador">
+
+        <h2>
+            Simulador de Asociaciones Civiles
+        </h2>
+
+        <form id="formularioAsociacion">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre de la asociación"
+                required
+            >
+
+            <input
+                type="text"
+                id="categoria"
+                placeholder="Categoría"
+                required
+            >
+
+            <input
+                type="text"
+                id="objetivo"
+                placeholder="Objetivo"
+                required
+            >
+
+            <input
+                type="number"
+                id="donaciones"
+                placeholder="Donaciones iniciales"
+                min="0"
+                required
+            >
+
+            <button type="submit">
+                Agregar asociación
+            </button>
+
+        </form>
+
+
+
+        <p id="mensaje"></p>
+
+
+
+
+        <div>
+
+            <input
+                type="text"
+                id="filtro"
+                placeholder="Buscar por categoría"
+            >
+
+            <button id="botonVaciar">
+                Vaciar asociaciones
+            </button>
+
+        </div>
+
+
+        <!-- LISTADO DINÁMICO -->
+
+        <div id="listaAsociaciones"></div>
+
+    </section>
+
+</main>
+
+
+<script src="js/main.js" defer></script>
+
+
+</body>
+
+</html>
